@@ -1,0 +1,23 @@
+{
+	"pageheaders": [
+		{
+			"name": "titlepagemodule",
+			"data": {
+				"title": "BASE3"
+			}
+		}, {
+			"name": "metapagemodule",
+			"data": {
+				"robots": "noindex,nofollow"
+			}
+		}
+	],
+	"pagecontents": [
+		{
+			"name": "pagecontent",
+			"data": {
+				"content": "<h2>Welcome to the BASE3 &amp; ILIAS Integration Demo</h2><p>This is a demonstration site showcasing the technical coexistence of the <strong>BASE3 Framework</strong> with the <strong>ILIAS Learning Management System</strong>. It illustrates how BASE3 can serve as a modern, lightweight entry point that complements and extends the capabilities of ILIAS.</p>"
+			}
+		}
+	]
+}
