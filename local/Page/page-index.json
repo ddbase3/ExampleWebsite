@@ -16,7 +16,38 @@
 		{
 			"name": "pagecontent",
 			"data": {
-				"content": "<h2>Welcome to the BASE3 &amp; ILIAS Integration Demo</h2><p>This is a demonstration site showcasing the technical coexistence of the <strong>BASE3 Framework</strong> with the <strong>ILIAS Learning Management System</strong>. It illustrates how BASE3 can serve as a modern, lightweight entry point that complements and extends the capabilities of ILIAS.</p>"
+				"content": "<h1>Welcome to the BASE3 &amp; ILIAS Integration Demo</h1><p>This is a demonstration site showcasing the technical coexistence of the <strong>BASE3 Framework</strong> with the <strong>ILIAS Learning Management System</strong>. It illustrates how BASE3 can serve as a modern, lightweight entry point that complements and extends the capabilities of ILIAS.</p>"
+			}
+		}, {
+			"name": "pagecontent",
+			"data": {
+				"content": "<h2>What This Site Demonstrates</h2><p>This demo installation is not a production environment, but a technical proof-of-concept. Its purpose is to show how a BASE3-powered landing page can be positioned in front of an ILIAS instance to:</p><ul><li>Enhance the initial user experience</li><li>Provide a customizable and responsive interface</li><li>Serve as a platform for future extensions, tools, or integrations</li></ul><p>All content and functionality presented here is intended for development and testing purposes only.</p>"
+			}
+		}, {
+			"name": "pagecontent",
+			"data": {
+				"content": "<h2>About BASE3</h2>
+				<p><strong>BASE3</strong> is a flexible and modular PHP framework designed to serve as a lightweight foundation for modern web applications. It focuses on clean structure, clear separation of concerns, and seamless extensibility.</p><p>Key features include:</p><ul><li>Modular architecture</li><li>Support for dynamic UI components</li><li>Integration-friendly by design</li><li>Minimal setup with maximum flexibility</li></ul><p>In this demo, BASE3 handles the initial routing, theming, and frontend rendering before delegating control to the ILIAS system when needed.</p>"
+			}
+		}, {
+			"name": "pagecontent",
+			"data": {
+				"content": "<h2>About ILIAS</h2><p><strong>ILIAS</strong> is a widely used open-source learning management system (LMS) developed for universities, educational institutions, and businesses. It provides robust tools for course management, collaboration, and assessment.</p><p>ILIAS excels in:</p><ul><li>Managing large-scale educational content</li><li>Providing role-based access and permission systems</li><li>Supporting SCORM and other e-learning standards</li></ul>"
+			}
+		}, {
+			"name": "pagecontent",
+			"data": {
+				"content": "<h2>Why Combine BASE3 and ILIAS?</h2><p>While ILIAS is feature-rich and powerful, its interface can be overwhelming for first-time users or external visitors. BASE3 can act as a smart intermediary layer that:</p><ul><li>Simplifies the first contact with the platform</li><li>Provides branding and thematic customization</li><li>Offers additional services or pre-authentication options</li></ul><p>This opens the door for smoother onboarding, integrations with third-party systems, or even microservices that complement ILIAS' core functionality.</p>"
+			}
+		}, {
+			"name": "pagecontent",
+			"data": {
+				"content": "<h2>Disclaimer</h2><p>This website is a <strong>non-production demo</strong>. No real user data is stored or processed here. Its only purpose is to <strong>demonstrate the technical feasibility</strong> of combining BASE3 and ILIAS in a development environment.</p>"
+			}
+		}, {
+			"name": "pagecontent",
+			"data": {
+				"content": "<h2>Looking Ahead</h2><p>Future iterations of this setup may explore:</p><ul><li>Full single sign-on (SSO) integration</li><li>Dynamic content previews from ILIAS</li><li>Role-based dashboards built with BASE3</li><li>API bridges between custom modules and ILIAS backends</li></ul><p>Feedback and collaboration are welcome!</p>"
 			}
 		}
 	]
