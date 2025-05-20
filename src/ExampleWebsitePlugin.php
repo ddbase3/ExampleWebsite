@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ContourzWebsite;
+namespace ExampleWebsite;
 
 use Base3\Api\IPlugin;
 use Base3\Api\ICheck;
@@ -14,7 +14,7 @@ use Base3\Session\BasicSession\BasicSession;
 use Base3\Usermanager\Api\IUsermanager;
 use Base3\Usermanager\No\NoUsermanager;
 
-class ContourzWebsitePlugin implements IPlugin, ICheck {
+class ExampleWebsitePlugin implements IPlugin, ICheck {
 
 	private $container;
 
