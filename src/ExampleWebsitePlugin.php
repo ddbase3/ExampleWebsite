@@ -41,7 +41,7 @@ class ExampleWebsitePlugin implements IPlugin, ICheck {
 			->set('session', new BasicSession($this->container->get(IConfiguration::class)), IContainer::SHARED)
 			->set(ISession::class, 'session', IContainer::ALIAS)
 
-			->set('accesscontrol', new NoAccesscontrol, IContainer::SHARED)
+			->set('accesscontrol', new NoAccesscontrol, IContainer::SHARED | IContainer::NOOVERWRITE)
 			->set(IAccesscontrol::class, 'accesscontrol', IContainer::ALIAS)
 
 			->set('usermanager', new NoUsermanager, IContainer::SHARED)
