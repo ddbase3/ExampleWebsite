@@ -11,6 +11,9 @@
             "data": {
                 "robots": "noindex,nofollow"
             }
+        },
+        {
+            "name": "headerpagemodule"
         }
     ],
     "pagecontents": [
@@ -55,6 +58,11 @@
             "data": {
                 "content": "<h2>Looking Ahead</h2><p>Future iterations of this setup may explore:</p><ul><li>Full single sign-on (SSO) integration</li><li>Dynamic content previews from ILIAS</li><li>Role-based dashboards built with BASE3</li><li>API bridges between custom modules and ILIAS backends</li></ul><p>Feedback and collaboration are welcome!</p>"
             }
+        }
+    ],
+    "pagefooters": [
+        {
+            "name": "footerpagemodule"
         }
     ]
 }
