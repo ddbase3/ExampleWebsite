@@ -19,7 +19,7 @@ class HeaderPageModule extends AbstractModuleHeader {
 	}
 	
 	public function getHtml() {
-		$url = $this->assetresolver->resolve('plugin/ExampleWebsite/assets/style.css');
+		$url = $this->assetresolver->resolve('plugin/FreeTemplate/assets/style.css');
 		return '<link rel="stylesheet" type="text/css" href="' . $url . '" />' . "\n";
 	}
 }
