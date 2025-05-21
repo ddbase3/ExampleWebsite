@@ -2,6 +2,7 @@
 
 namespace ExampleWebsite;
 
+use Base3\Api\IAssetResolver;
 use Base3\Api\IPlugin;
 use Base3\Api\ICheck;
 use Base3\Api\IContainer;
@@ -9,6 +10,7 @@ use Base3\Api\IMvcView;
 use Base3\Accesscontrol\Api\IAccesscontrol;
 use Base3\Accesscontrol\No\NoAccesscontrol;
 use Base3\Configuration\Api\IConfiguration;
+use Base3\Core\AssetResolver;
 use Base3\Session\Api\ISession;
 use Base3\Session\BasicSession\BasicSession;
 use Base3\Usermanager\Api\IUsermanager;
@@ -42,7 +44,9 @@ class ExampleWebsitePlugin implements IPlugin, ICheck {
 			->set('accesscontrol', new NoAccesscontrol, IContainer::SHARED)
 			->set(IAccesscontrol::class, 'accesscontrol', IContainer::ALIAS)
 
-			->set('usermanager', new NoUsermanager, IContainer::SHARED);
+			->set('usermanager', new NoUsermanager, IContainer::SHARED)
+			
+			->set(IAssetResolver::class, fn() => new AssetResolver, IContainer::SHARED | IContainer::NOOVERWRITE);
 	}
 
 	// Implementation of ICheck
