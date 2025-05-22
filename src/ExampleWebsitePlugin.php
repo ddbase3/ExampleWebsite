@@ -44,7 +44,7 @@ class ExampleWebsitePlugin implements IPlugin, ICheck {
 			->set('accesscontrol', new NoAccesscontrol, IContainer::SHARED | IContainer::NOOVERWRITE)
 			->set(IAccesscontrol::class, 'accesscontrol', IContainer::ALIAS)
 
-			->set('usermanager', new NoUsermanager, IContainer::SHARED)
+			->set('usermanager', new NoUsermanager, IContainer::SHARED | IContainer::NOOVERWRITE)
 			
 			->set(IAssetResolver::class, fn() => new AssetResolver, IContainer::SHARED | IContainer::NOOVERWRITE);
 	}
