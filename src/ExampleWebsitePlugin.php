@@ -52,9 +52,7 @@ class ExampleWebsitePlugin implements IPlugin, ICheck {
 	// Implementation of ICheck
 
 	public function checkDependencies() {
-		return array(
-			"base3templateplugin_installed" => $this->container->get('base3templateplugin') ? "Ok" : "base3templateplugin not installed"
-		);
+		return [];
 	}
 
 }
