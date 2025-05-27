@@ -26,7 +26,7 @@ class ExampleWebsitePlugin implements IPlugin, ICheck {
 
 	// Implementation of IBase
 
-	public function getName() {
+	public static function getName(): string {
 		return "examplewebsiteplugin";
 	}
 

@@ -10,7 +10,7 @@ class FooterPageModule extends AbstractModuleFooter {
 
 	public function __construct(private readonly IAssetResolver $assetresolver) {}
 
-	public function getName() {
+	public static function getName(): string {
 		return 'footerpagemodule';
 	}
 
