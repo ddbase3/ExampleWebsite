@@ -42,12 +42,6 @@
             }
         },
         {
-            "name": "parallaxmodule",
-            "data": {
-                "image": "https://master.base3.de/userfiles/images/01/boughs.jpg"
-            }
-        },
-        {
             "name": "pagecontent",
             "data": {
                 "content": "<h2>Why Combine BASE3 and ILIAS?</h2><p>While ILIAS is feature-rich and powerful, its interface can be overwhelming for first-time users or external visitors. BASE3 can act as a smart intermediary layer that:</p><ul><li>Simplifies the first contact with the platform</li><li>Provides branding and thematic customization</li><li>Offers additional services or pre-authentication options</li></ul><p>This opens the door for smoother onboarding, integrations with third-party systems, or even microservices that complement ILIAS' core functionality.</p>"
