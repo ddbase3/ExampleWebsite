@@ -23,7 +23,8 @@
         {
             "name": "pagecontent",
             "data": {
-                "content": "<h1>BASE3 DataHawk Demo</h1>"
+                "content": "<h1>BASE3 DataHawk Demo</h1><p>About
+DataHawk is a BASE3 Framework plugin that allows embedding dynamic reports as page modules, enabling easy display of interactive tables and charts for data visualization and analysis.</p>"
             }
         },
         {
