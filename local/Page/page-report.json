@@ -1,0 +1,47 @@
+{
+    "pageheaders": [
+        {
+            "name": "titlepagemodule",
+            "data": {
+                "title": "BASE3 DataHawk Demo"
+            }
+        },
+        {
+            "name": "metapagemodule",
+            "data": {
+                "robots": "noindex,nofollow"
+            }
+        },
+        {
+            "name": "assetloaderpagemodule"
+        },
+        {
+            "name": "headerpagemodule"
+        }
+    ],
+    "pagecontents": [
+        {
+            "name": "pagecontent",
+            "data": {
+                "content": "<h1>BASE3 DataHawk Demo</h1>"
+            }
+        },
+        {
+            "name": "datatablepagemodule",
+            "data": {
+                "height": "500px"
+            }
+        },
+        {
+            "name": "datachartpagemodule",
+            "data": {
+                "height": "500px"
+            }
+        }
+    ],
+    "pagefooters": [
+        {
+            "name": "footerpagemodule"
+        }
+    ]
+}
