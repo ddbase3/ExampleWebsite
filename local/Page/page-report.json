@@ -27,15 +27,21 @@
             }
         },
         {
+            "name": "datapiechartpagemodule",
+            "data": {
+                "height": "350px"
+            }
+        },
+        {
             "name": "datatablepagemodule",
             "data": {
                 "height": "500px"
             }
         },
         {
-            "name": "datachartpagemodule",
+            "name": "databarchartpagemodule",
             "data": {
-                "height": "500px"
+                "height": "350px"
             }
         }
     ],
