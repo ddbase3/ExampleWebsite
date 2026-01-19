@@ -16,6 +16,9 @@
             "name": "assetloaderpagemodule"
         },
         {
+            "name": "jquerypagemodule"
+        },
+        {
             "name": "headerpagemodule"
         }
     ],

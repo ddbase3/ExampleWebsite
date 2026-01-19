@@ -11,6 +11,8 @@ use Base3\Accesscontrol\Api\IAccesscontrol;
 use Base3\Accesscontrol\No\NoAccesscontrol;
 use Base3\Configuration\Api\IConfiguration;
 use Base3\Core\AssetResolver;
+use Base3\Middleware\Session\SessionMiddleware;
+use Base3\Middleware\Accesscontrol\AccesscontrolMiddleware;
 use Base3\Session\Api\ISession;
 use Base3\Session\BasicSession\BasicSession;
 use Base3\Usermanager\Api\IUsermanager;
@@ -38,13 +40,19 @@ class ExampleWebsitePlugin implements IPlugin, ICheck {
 
 			->set($this->getName(), $this, IContainer::SHARED)
 
-			->set('session', new BasicSession($this->container->get(IConfiguration::class)), IContainer::SHARED)
-			->set(ISession::class, 'session', IContainer::ALIAS)
+			->set(ISession::class, fn($c) => new BasicSession($c->get(IConfiguration::class)), IContainer::SHARED)
+			->set('session', ISession::class, IContainer::ALIAS)
 
-			->set('accesscontrol', new NoAccesscontrol, IContainer::SHARED | IContainer::NOOVERWRITE)
-			->set(IAccesscontrol::class, 'accesscontrol', IContainer::ALIAS)
+			->set(IAccesscontrol::class, fn() => new NoAccesscontrol, IContainer::SHARED | IContainer::NOOVERWRITE)
+			->set('accesscontrol', IAccesscontrol::class, IContainer::ALIAS)
 
-			->set('usermanager', new NoUsermanager, IContainer::SHARED | IContainer::NOOVERWRITE)
+			->set('middlewares', fn($c) => [
+				new SessionMiddleware($c->get(ISession::class)),
+				new AccesscontrolMiddleware($c->get(IAccesscontrol::class))
+			])
+
+			->set(IUsermanager::class, fn() => new NoUsermanager, IContainer::SHARED | IContainer::NOOVERWRITE)
+			->set('usermanager', IUsermanager::class, IContainer::ALIAS)
 			
 			->set(IAssetResolver::class, fn() => new AssetResolver, IContainer::SHARED | IContainer::NOOVERWRITE);
 	}
